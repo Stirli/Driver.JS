@@ -2,9 +2,37 @@
     display: none;
 }
 
-.car {
+.car, .enemy {
     width: 50px;
     height: 100px;
-    background: transparent url('./alt-image/player.png') center no-repeat;
-    background-size: cover;
+    background: transparent url('./alt-image/player.png') center /cover no-repeat;
+    position: absolute;
+    left: 125px;
+    bottom: 0px;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gameArea {
+    width: 300px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background: #222;
+}
+
+.strip {
+    width: 8px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    left: 146px;
+}
+
+.strip:first-of-type {
+    background: red;
 }
