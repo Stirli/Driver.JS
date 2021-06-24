@@ -1,14 +1,47 @@
-.hide {
-    display: none;
+
+
+.start {
+    position: fixed;
+    width: 50%;
+    height: 25%;
+    background: darkblue;
+    color: white;
+    top: 35%;
+    margin-left: 25%;
+    text-align: center;
+    display: table;
+    cursor: pointer;
 }
 
-.car, .enemy {
+.start div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.car,
+.enemy {
     width: 50px;
     height: 100px;
-    background: transparent url('./alt-image/player.png') center /cover no-repeat;
+    background: transparent url('./image/player.png') center /cover no-repeat;
     position: absolute;
     left: 125px;
     bottom: 0px;
+}
+
+.turn-left {
+    transform: rotate(-15deg);
+}
+
+.turn-right {
+    transform: rotate(15deg);
+}
+
+.enemy-debug {
+    line-height: 100px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: -2px -2px 0px #000000, 2px 2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000;
 }
 
 .game {
@@ -35,4 +68,9 @@
 
 .strip:first-of-type {
     background: red;
+}
+
+
+.hide {
+    display: none;
 }
